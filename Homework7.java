@@ -1,10 +1,19 @@
 public class Homework7 {
+	// lorenzo Largent
 
 	/* Use a while loop to add up the integers
 	 * from 1 to x and return the result
 	 */
 	public static int problem1(int x) {
+	int y = 0;
+	int i = 1;
+while(i <= x){
+	 y += i;
+	 i++;
 
+
+}
+return y;
 	}
 
 	/* Use a loop (while or for) to find the
@@ -14,6 +23,15 @@ public class Homework7 {
 	 * use that method, you must use a loop
 	 */
 	public static int problem2(String s, String t) {
+		int x = 0;
+		while (x <= s.length() - t.length()){
+			String s1 = s.substring(x, t.length() + x);
+			if (s1.equals(t)) {
+				return x;
+			}
+			x++;
+		}
+		return -1;
 
 	}
 
@@ -22,6 +40,18 @@ public class Homework7 {
 	 * power
 	 */
 	public static int problem3(int a, int b) {
+		int x = 0;
+		int y = a;
+		while (x+1 <b){
+			if (b==0){
+				y=1;
+				x=b;
+			}else{
+				y = y * a;
+				x++;
+			}
+		}
+		return y;
 
 	}
 
@@ -30,7 +60,12 @@ public class Homework7 {
 	 * b (i.e., calculate a / b using a loop)
 	 */
 	public static int problem4(int a, int b) {
-
+		int a1 = 0;
+		while (a >= b){
+			a= a-b;
+			a1++;
+		}
+return a1;
 	}
 
 	/* Use a loop (while or for) to calculate and
@@ -38,7 +73,10 @@ public class Homework7 {
 	 * (i.e., calculate a % b using a loop)
 	 */
 	 public static int problem5(int a, int b) {
-
+		 while (a>= b) {
+			 a=a-b;
+		 }
+return a;
 	 }
 
 	public static void main(String[] args) {
